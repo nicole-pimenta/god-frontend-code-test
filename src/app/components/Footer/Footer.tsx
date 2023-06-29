@@ -1,5 +1,9 @@
-import React from "react";
+import { StyledContainer } from "./style";
 
 export default function Footer() {
-  return <div>Footer</div>;
+  return (
+    <StyledContainer>
+      <h3> Feito por Nicole Pimenta</h3>
+    </StyledContainer>
+  );
 }

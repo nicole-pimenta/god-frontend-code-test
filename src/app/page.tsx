@@ -3,6 +3,8 @@ import { useEffect, useState } from "react";
 import Header from "./components/Header/Header";
 import Footer from "./components/Footer/Footer";
 import CarsList from "./components/CarsList/CarsList";
+import { GlobalStyle } from "./styles/global";
+import { MainContainer } from "./style";
 
 export interface ICar {
   id: string;
@@ -34,10 +36,11 @@ export default function Home() {
   }, []);
   return (
     <>
+      <GlobalStyle />
       <Header />
-      <main>
+      <MainContainer>
         <CarsList cars={cars} />
-      </main>
+      </MainContainer>
       <Footer />
     </>
   );
