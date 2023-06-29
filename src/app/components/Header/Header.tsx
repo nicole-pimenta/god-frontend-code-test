@@ -1,4 +1,5 @@
 import { StyledContainer } from "./style";
+import Form from "../Form/Form";
 
 export default function Header() {
   return (
@@ -7,9 +8,7 @@ export default function Header() {
         VolvoCars<span>CodeTest</span>
       </h2>
 
-      <form>
-        <input type="text"></input>
-      </form>
+      <Form />
     </StyledContainer>
   );
 }
