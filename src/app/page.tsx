@@ -1,5 +1,8 @@
 "use client";
 import { useEffect, useState } from "react";
+import Header from "./components/Header/Header";
+import Footer from "./components/Footer/Footer";
+import CarsList from "./components/CarsList/CarsList";
 
 export default function Home() {
   const [carsList, setCarsList] = useState([]);
@@ -15,13 +18,12 @@ export default function Home() {
   }, []);
 
   return (
-    <main>
-      <p>
-        {" "}
-        {carsList.map((car) => (
-          <p key={car.id}> {car.modelName}</p>
-        ))}
-      </p>
-    </main>
+    <>
+      <Header />
+      <main>
+        <CarsList />
+      </main>
+      <Footer />
+    </>
   );
 }
