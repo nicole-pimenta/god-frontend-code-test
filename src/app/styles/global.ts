@@ -25,9 +25,8 @@ button{
 }
 
 :root {
-  --color-primary: #FD377E;
-  --color-primary-2: #e34981;
-  --color-secondary:#03b898;
+ 
+  --color-secondary:#235789;
   --color-grey-1:  #ffffff;
   --color-grey-2:  #868e96;
   --color-grey-3:  #000000;
@@ -35,7 +34,7 @@ button{
   --bg-color-2: #F5F5F5;;
   --radius-default: 0.5rem;
   --title-1: 38px;
-  --title-2: 22px;
+  --title-2: 20px;
   --title-3: 16px;
   --title-4: 12px;
   --text-1: 16px;

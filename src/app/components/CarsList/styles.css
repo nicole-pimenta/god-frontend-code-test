@@ -28,13 +28,37 @@ body {
 
   /* Center slide text vertically */
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
 }
 
 .swiper-slide img {
   display: block;
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
+
+  height: 60%;
+  object-fit: contain;
+}
+
+p {
+  text-align: left;
+  font-size: var(--title-3);
+  color: var(--color-grey-2);
+  font-weight: 800;
+}
+h4 {
+  color: var(--color-grey-3);
+  font-size: var(--title-2);
+}
+span {
+  color: var(--color-grey-2);
+  font-size: var(--title-3);
+}
+
+a {
+  color: var(--color-secondary);
+  font-weight: 700;
+  margin: 10px;
+  font-size: var(--title-3);
+  cursor: pointer;
 }

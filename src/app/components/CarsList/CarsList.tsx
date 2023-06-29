@@ -1,7 +1,7 @@
 import CarsCard from "../CarsCard/CarsCard";
-import { ICar } from "@/app/page";
 import { StyledContainer } from "./style";
 import { Swiper, SwiperSlide } from "swiper/react";
+import { ICar } from "../../page";
 
 import React, { useRef, useState } from "react";
 // Import Swiper styles
@@ -14,8 +14,6 @@ import "./styles.css";
 // import required modules
 import { FreeMode, Pagination } from "swiper";
 
-import Image from "next/image";
-
 interface ICarsListProps {
   cars: ICar[];
 }
@@ -23,10 +21,6 @@ interface ICarsListProps {
 export default function CarsList({ cars }: ICarsListProps) {
   return (
     <StyledContainer>
-      {/* {cars.map((car) => (
-        <CarsCard key={car.id} car={car} />
-      ))} */}
-
       <Swiper
         slidesPerView={3}
         spaceBetween={30}
@@ -37,15 +31,11 @@ export default function CarsList({ cars }: ICarsListProps) {
         modules={[FreeMode, Pagination]}
         className="mySwiper"
       >
-        <SwiperSlide>Slide 1</SwiperSlide>
-        <SwiperSlide>Slide 2</SwiperSlide>
-        <SwiperSlide>Slide 3</SwiperSlide>
-        <SwiperSlide>Slide 4</SwiperSlide>
-        <SwiperSlide>Slide 5</SwiperSlide>
-        <SwiperSlide>Slide 6</SwiperSlide>
-        <SwiperSlide>Slide 7</SwiperSlide>
-        <SwiperSlide>Slide 8</SwiperSlide>
-        <SwiperSlide>Slide 9</SwiperSlide>
+        {cars.map((car) => (
+          <SwiperSlide key={car.id}>
+            <CarsCard car={car} />
+          </SwiperSlide>
+        ))}
       </Swiper>
     </StyledContainer>
   );

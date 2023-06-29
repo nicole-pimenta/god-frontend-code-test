@@ -1,5 +1,3 @@
-import { StyledContainer } from "./style";
-
 import { ICar } from "../../page";
 
 interface ICarsCardProps {
@@ -7,6 +5,20 @@ interface ICarsCardProps {
 }
 
 export default function CarsCard({ car }: ICarsCardProps) {
-  const { id, modelName, bodyType, modelType, imageUrl } = car;
-  return <>teste</>;
+  const { bodyType, imageUrl, modelName, modelType } = car;
+  return (
+    <>
+      <div>
+        <p>{bodyType.toUpperCase()}</p>
+        <h4>
+          {modelName} <span> {modelType}</span>
+        </h4>
+      </div>
+      <img src={imageUrl} />
+      <div>
+        <a>LEARN  ></a>
+        <a>SHOP  ></a>
+      </div>
+    </>
+  );
 }
