@@ -13,6 +13,7 @@ export const StyledContainer = styled.div`
   display: flex;
   align-items: center;
   justify-content: space-between;
+  border-radius: 4px 4px 0px 0px;
 
   h2 {
     color: var(--color-grey-3);

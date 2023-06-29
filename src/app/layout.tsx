@@ -6,7 +6,7 @@ const nunito = Nunito({
 });
 
 export const metadata = {
-  title: "Cars-Frontend-code-test",
+  title: "VolvoCars_CodeTest",
   description: "Cars-Frontend-code-test",
 };
 

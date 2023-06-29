@@ -1,17 +1,15 @@
 import styled from "styled-components";
 
-export const StyledContainer = styled.div`
+export const StyledContainer = styled.ul`
   width: 95%;
-  height: 69px;
-  max-width: 1000px;
   margin: 0 auto;
   padding-left: 1rem;
   padding-right: 1rem;
-  background-color: var(--bg-color-2);
-  height: 69px;
+  background-color: var(--color-grey-1);
+  height: 80%;
+  border-radius: 6px;
   box-shadow: 0px 4px 32px -12px rgba(0, 0, 0, 0.25);
   display: flex;
   align-items: center;
   justify-content: center;
-  border-radius: 0px 0px 4px 4px;
 `;

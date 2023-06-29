@@ -1,10 +1,12 @@
-import React from "react";
-import { ICar } from "@/app/page";
+import { StyledContainer } from "./style";
+
+import { ICar } from "../../page";
 
 interface ICarsCardProps {
-  cars: ICar[];
+  car: ICar;
 }
 
-export default function CarsCard({ cars }: ICarsCardProps) {
-  return <div>{cars.map((ele) => ele.id)}</div>;
+export default function CarsCard({ car }: ICarsCardProps) {
+  const { id, modelName, bodyType, modelType, imageUrl } = car;
+  return <>teste</>;
 }
