@@ -32,8 +32,6 @@ export default function Form({ cars, setCars, getCars }: IFormProps) {
         car.bodyType.toLowerCase().includes(item.search.toLowerCase())
     );
 
-    console.log(searchItems);
-
     if (searchItems.length) {
       setCars(searchItems);
       setActiveBtn(!activeBtn);
