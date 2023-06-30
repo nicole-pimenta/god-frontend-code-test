@@ -9,7 +9,6 @@ interface IHeaderProps {
 }
 
 export default function Header({ cars, setCars, getCars }: IHeaderProps) {
-  console.log(cars);
   return (
     <StyledContainer>
       <h2>
