@@ -1,33 +1,29 @@
 import { useForm, SubmitHandler } from "react-hook-form";
-import { FormContainer } from "./style";
+import { StyledForm } from "./style";
 import { Input } from "./Input/Input";
 
-export default function Form() {
-  const {
-    register,
-    handleSubmit,
-    reset,
-    formState: { errors },
-  } = useForm();
+type FormValue = {
+  search: string;
+};
 
-  const onSubmit: SubmitHandler<> = (formValue) => {
-    console.log(formValue);
+export default function Form() {
+  const { register, handleSubmit, reset } = useForm<FormValue>();
+
+  const onSubmit: SubmitHandler<FormValue> = (formData) => {
+    console.log(formData);
     reset();
   };
 
   return (
-    <FormContainer>
-      <form onSubmit={handleSubmit(onSubmit)}>
-        <Input
-          label="Título "
-          placeholder="Digite aqui o título do seu livro"
-          type="text"
-          id="title"
-          {...register("title")}
-        />
+    <StyledForm onSubmit={handleSubmit(onSubmit)}>
+      <Input
+        placeholder="Digite aqui a sua busca"
+        type="text"
+        id="search"
+        {...register("search")}
+      />
 
-        <button type="submit"> Buscar</button>
-      </form>
-    </FormContainer>
+      <button type="submit">Buscar</button>
+    </StyledForm>
   );
 }

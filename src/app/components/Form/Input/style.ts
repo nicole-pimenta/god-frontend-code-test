@@ -1,10 +1,6 @@
 import styled from "styled-components";
 
 export const StyledInputContainer = styled.div`
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-
   input {
     height: 53px;
     border-radius: 8px;
@@ -12,6 +8,7 @@ export const StyledInputContainer = styled.div`
     border: 2px solid #f8f9fa;
     background: #e9ecef;
     color: #868e96;
+    width: 100%;
   }
 
   @media (max-width: 800px) {
