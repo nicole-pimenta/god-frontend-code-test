@@ -16,8 +16,8 @@ export default function CarsCard({ car }: ICarsCardProps) {
       </div>
       <img src={imageUrl} />
       <div>
-        <a>LEARN  ></a>
-        <a>SHOP  ></a>
+        <a>LEARN {">"}</a>
+        <a>SHOP {">"}</a>
       </div>
     </>
   );

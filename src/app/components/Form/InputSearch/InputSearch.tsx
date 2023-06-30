@@ -5,7 +5,7 @@ interface IInputProps extends InputHTMLAttributes<HTMLInputElement> {
 }
 
 // eslint-disable-next-line react/display-name
-export const Input = forwardRef(
+export const InputSearch = forwardRef(
   (
     { placeholder, ...rest }: IInputProps,
     ref: ForwardedRef<HTMLInputElement>

@@ -30,6 +30,15 @@ export default function CarsList({ cars }: ICarsListProps) {
         }}
         modules={[FreeMode, Pagination]}
         className="mySwiper"
+        breakpoints={{
+          200: {
+            slidesPerView: 1,
+          },
+
+          600: {
+            slidesPerView: 3,
+          },
+        }}
       >
         {cars.map((car) => (
           <SwiperSlide key={car.id}>

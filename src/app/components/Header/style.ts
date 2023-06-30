@@ -23,4 +23,10 @@ export const StyledContainer = styled.div`
     color: var(--color-grey-2);
     font-size: var(--title-3);
   }
+
+  @media (max-width: 600px) {
+    height: 600px;
+    flex-direction: column;
+    justify-content: space-around;
+  }
 `;

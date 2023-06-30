@@ -1,6 +1,6 @@
 import { useForm, SubmitHandler } from "react-hook-form";
 import { StyledForm } from "./style";
-import { Input } from "./Input/Input";
+import { InputSearch } from "./InputSearch/InputSearch";
 import { ICar } from "@/app/page";
 import { useState } from "react";
 import { toast } from "react-toastify";
@@ -46,7 +46,7 @@ export default function Form({ cars, setCars, getCars }: IFormProps) {
 
   return (
     <StyledForm onSubmit={handleSubmit(onSubmit)}>
-      <Input
+      <InputSearch
         placeholder="Digite aqui a sua busca"
         type="text"
         {...register("search")}
