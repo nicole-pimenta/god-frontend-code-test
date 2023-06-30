@@ -12,7 +12,7 @@ type FormValue = {
 interface IFormProps {
   cars: ICar;
   setCars: React.Dispatch<React.SetStateAction<ICar[]>>;
-  getCars: Promise<void>;
+  getCars(): Promise<void>;
 }
 
 export default function Form({ cars, setCars, getCars }: IFormProps) {
@@ -20,7 +20,6 @@ export default function Form({ cars, setCars, getCars }: IFormProps) {
 
   function resetSearch() {
     setActiveBtn(!activeBtn);
-
     getCars();
   }
 

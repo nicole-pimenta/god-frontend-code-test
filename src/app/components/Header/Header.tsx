@@ -5,7 +5,7 @@ import { ICar } from "@/app/page";
 interface IHeaderProps {
   cars: ICar;
   setCars: React.Dispatch<React.SetStateAction<ICar[]>>;
-  getCars: Promise<void>;
+  getCars(): Promise<void>;
 }
 
 export default function Header({ cars, setCars, getCars }: IHeaderProps) {
