@@ -6,7 +6,11 @@ import CarsList from "./components/CarsList/CarsList";
 import { GlobalStyle } from "./styles/global";
 import { MainContainer } from "./style";
 
+import { ToastContainer } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
+
 export interface ICar {
+  filter(arg0: (car: any) => any): unknown;
   id: string;
   modelName: string;
   bodyType: string;
@@ -42,6 +46,19 @@ export default function Home() {
         <CarsList cars={cars} />
       </MainContainer>
       <Footer />
+
+      <ToastContainer
+        position="top-left"
+        autoClose={3000}
+        hideProgressBar={false}
+        newestOnTop={false}
+        closeOnClick
+        rtl={false}
+        pauseOnFocusLoss
+        draggable
+        pauseOnHover
+        theme="light"
+      />
     </>
   );
 }
