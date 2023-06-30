@@ -26,11 +26,13 @@ export default function Form({ cars, setCars, getCars }: IFormProps) {
   const { register, handleSubmit, reset } = useForm<FormValue>();
 
   const onSubmit: SubmitHandler<FormValue> = (item) => {
-    const searchItems = cars.filter(
+    const searchItems: ICar[] = cars.filter(
       (car) =>
         car.modelName.toLowerCase().includes(item.search.toLowerCase()) ||
         car.bodyType.toLowerCase().includes(item.search.toLowerCase())
     );
+
+    console.log(searchItems);
 
     if (searchItems.length) {
       setCars(searchItems);
