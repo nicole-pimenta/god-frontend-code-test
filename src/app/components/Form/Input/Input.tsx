@@ -1,11 +1,15 @@
 import { ForwardedRef, InputHTMLAttributes, forwardRef } from "react";
 import { StyledInputContainer } from "./style";
 interface IInputProps extends InputHTMLAttributes<HTMLInputElement> {
-  id: string;
+  placeholder: string;
 }
 
+// eslint-disable-next-line react/display-name
 export const Input = forwardRef(
-  ({ id, ...rest }: IInputProps, ref: ForwardedRef<HTMLInputElement>) => {
+  (
+    { placeholder, ...rest }: IInputProps,
+    ref: ForwardedRef<HTMLInputElement>
+  ) => {
     return (
       <StyledInputContainer>
         ⁠
