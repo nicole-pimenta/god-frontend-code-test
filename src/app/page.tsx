@@ -41,7 +41,7 @@ export default function Home() {
   return (
     <>
       <GlobalStyle />
-      <Header cars={cars} setCars={setCars} getCars={getCars} />
+      <Header setCars={setCars} getCars={getCars} cars={cars} />
       <MainContainer>
         <CarsList cars={cars} />
       </MainContainer>

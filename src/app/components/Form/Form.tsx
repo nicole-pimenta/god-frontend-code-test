@@ -10,7 +10,7 @@ type FormValue = {
 };
 
 interface IFormProps {
-  cars: ICar;
+  cars: ICar[];
   setCars: React.Dispatch<React.SetStateAction<ICar[]>>;
   getCars(): Promise<void>;
 }
@@ -27,7 +27,7 @@ export default function Form({ cars, setCars, getCars }: IFormProps) {
 
   const onSubmit: SubmitHandler<FormValue> = (item) => {
     const searchItems: any = cars.filter(
-      (car) =>
+      (car: ICar) =>
         car.modelName.toLowerCase().includes(item.search.toLowerCase()) ||
         car.bodyType.toLowerCase().includes(item.search.toLowerCase())
     );

@@ -3,12 +3,13 @@ import Form from "../Form/Form";
 import { ICar } from "@/app/page";
 
 interface IHeaderProps {
-  cars: ICar;
+  cars: ICar[];
   setCars: React.Dispatch<React.SetStateAction<ICar[]>>;
   getCars(): Promise<void>;
 }
 
 export default function Header({ cars, setCars, getCars }: IHeaderProps) {
+  console.log(cars);
   return (
     <StyledContainer>
       <h2>
