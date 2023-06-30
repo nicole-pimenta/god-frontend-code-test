@@ -1,3 +1,32 @@
+<h1 align="center">Projeto VolvoCars CodeTest</h1>
+
+## Sobre
+
+Aplicação criada para teste técnico de vaga para desenvolvedor Front end React
+
+Plataforma conta carrossel de carros da Volvo , além de uma barra de pesquisa dos carros
+Você poderá conferir a aplicação através da seguinte URL https://god-frontend-code-test-lovat.vercel.app/
+
+</div> <br>
+
+<p align="center">
+<img src="https://img.shields.io/badge/vite-white?style=for-the-badge&logo=vite&logoColor=8B73FE"></img>
+<img src="https://img.shields.io/badge/react-white?style=for-the-badge&logo=vite&logoColor=8B73FE"></img>
+<img src="https://img.shields.io/badge/typescript-white?style=for-the-badge&logo=typescript&logoColor=8B73FE"></img>
+
+</div>
+
+ <br>
+## Tecnologias Usadas 🛠️
+
+- [Vite](https://vitejs.dev)
+- [React](https://react.dev/)
+- [Typescript](https://www.typescriptlang.org/)
+- [NextJs](https://nextjs.org/)
+- [Styled Components](https://styled-components.com/)
+- [Swiper](https://swiperjs.com/)
+- [Toastify](https://www.npmjs.com/package/react-toastify)
+
 # Volvo Cars (Global Online Digital)
 
 ## Front-end coding test (React)
@@ -48,4 +77,3 @@ Two extra SVG icons are also provided by our designer which are stored under `do
 ## Submission
 
 Clone this repository to get started. Due to a number of reasons, not least privacy, you will be asked to zip your solution and mail it in, instead of submitting a pull-request. In order to maintain an unbiased reviewing process, please ensure to keep your name or other Personal Identifiable Information (PII) from the code.
-
